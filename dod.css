@@ -4,7 +4,7 @@
 }
 body {
   font-family: 'Roboto', sans-serif;
-  background-color:#FFFFF;
+  background-color:#f1f5fe;
   margin: 0;}
 
 
@@ -16,15 +16,20 @@ input{
     line-height: 16px;
     border: 2px solid #E9F2FF;
     border-radius: 5px;
-    color: #008B8B;
+    color: black;
+    padding-left: 25px;
   }
-
+input:focus{
+  outline: none;
+  border: 2px solid #c1d9fd;
+}
 
  .form-title{
    color: #30507D;
    font-weight: 500;
    font-size: 20px;
    line-height: 23px;
+   margin-bottom: 38px;
  }
 
 header {
@@ -32,24 +37,91 @@ header {
   height: 70px;
 
 }
-.main {
+p {
+  color: #30507D;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 38px;
+  margin-bottom: 2px;
+
+}
+main{
+  background: #f1f5fe;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.reg-form {
+  opacity: 0;
+  position: relative;
+  z-index: 2;
   max-width: 415px;
+  width: 100%;
   background: #ffffff;
   box-shadow: 0px 6px 50px rgba(32, 178, 170);
-  border-radius: 30px;
-  padding-left: 30px;
+  border-radius: 20px;
+  padding-left: 20px;
   padding-right: 30px;
-  height: 829px;
+  padding-top: 38px;
+  padding-bottom: 38px;
+  animation-name: fadeForm;
+  animation-duration: .7s;
+  animation-timing-function: ease-ease-in-out;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+
 }
-footer {
-  background: #DCCEC8;
-  height: 70px;
+@keyframes fadeForm {
+  0%{
+    opacity: 0;
+  }
+  25%{
+    opacity: .25;
+  }
+  50%{
+    opacity: .5;
+  }
+  75%{
+    opacity: .75;
+  }
+  100%{
+    opacity: 1;
+  }
+
 }
-.container {
-  width: 100%;
-  max-width: 1024px;
-  padding: 0 15px;
-  margin: 0 auto;
-  background: #FFD0AB;
-  height: 100%;
+.form-buttons{
+max-width: 570px;
+background: #ffffff;
+
+border-radius: 20px;
+padding-left: 90px;
+padding-right: 0px;
+padding-top: 2px;
+padding-bottom: 2px;
+
+
+}
+.form-fields{
+  margin-bottom: 13px;
+}
+
+
+.button{
+  display:block;
+  height: 26px;
+  background: #008B8B;
+  border-radius: 6px;
+  border-color:#008080;
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
+
+
+}
+
+.button:hover{
+  background-color: #20B2AA;
 }
