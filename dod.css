@@ -9,7 +9,42 @@ body {
 
 
 
-input{
+input[type="checkbox"]{
+display: none;
+}
+
+
+label{
+  padding-left: 20px;
+}
+
+label::before{
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: #008080;
+  vertical-align: middle;
+  margin-left: -10px;
+  margin-right: 10px;
+  transition: 0.2s;
+  border: solid black 2px;
+  border-radius: 50%;
+  cursor: pointer;
+
+}
+input[type="checkbox"]:checked + label::before{
+  background-color: #20B2AA;
+  content: '';
+  text-align: center;
+  background-image: url('https://catherineasquithgallery.com/uploads/posts/2021-02/1614517412_147-p-krug-na-belom-fone-165.png');
+  width: 26px;
+  height: 26px;
+  background-size: 100%;
+}
+
+
+input[type="text"]{
   	height: 45px;
     width: 100%;
   	font-size: 14px;
@@ -18,19 +53,24 @@ input{
     border-radius: 5px;
     color: black;
     padding-left: 25px;
+    margin-bottom: 10px;
   }
-input:focus{
+input[type="text"]:focus{
   outline: none;
   border: 2px solid #c1d9fd;
 }
 
  .form-title{
-   color: #30507D;
+   color: #008B8B;
    font-weight: 500;
    font-size: 20px;
    line-height: 23px;
    margin-bottom: 38px;
+
  }
+
+
+
 
 header {
   background: #B0DDDD;
@@ -38,11 +78,12 @@ header {
 
 }
 p {
-  color: #30507D;
+  color: #008B8B;
   font-weight: 500;
   font-size: 18px;
   line-height: 38px;
   margin-bottom: 2px;
+
 
 }
 main{
@@ -114,7 +155,7 @@ padding-bottom: 2px;
   height: 26px;
   background: #008B8B;
   border-radius: 6px;
-  border-color:#008080;
+  border-color: #008080;
   color: #fff;
   text-transform: uppercase;
   cursor: pointer;

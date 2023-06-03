@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Регистрация к ДОД</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="dod.css">
+  <link rel="shortcut icon" href="https://t2.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=http://fa.ru/Pages/Home.aspx&size=16">
+  <meta name="keywords" content="Регистрация к ДОД">
+  <meta name="keywords" content="Регистрация к ДОД">
+</head>
+
+
+<body>
+
+
+<main>
+
+<div class="reg-form">
+	<h1 class="form-title">
+	Регистрация на день открытых дверей
+	</h1>
+
+	<div class="container mt-4">
+    <form action="check.php" method="post">
+		    <input type="text" class="form-control"
+        name="Fullname" id="Fullname" placeholder="Ваше полное ФИО" required>
+		    <input type="text" class="form-control"
+        name="EMAIL" id="EMAIL" placeholder="Ваш email" required>
+		    <input type="text" class="form-control"
+        name="School" id="School" placeholder="Образовательное учреждение" required>
+        <input type="text" class="form-control"
+        name="Pnumber" id="Pnumber" placeholder="Номер телефона" required>
+    </form>
+  </div>
+    <p class="place">Откуда узнали</p>
+          <input id="sovet" type="checkbox" name="sub">
+            <label for="sovet">В образовательном учреждении</label>
+            <br>
+            <br>
+          <input id="pred" type="checkbox" name="sub">
+            <label for="pred">Предложили родственники</label>
+            <br>
+            <br>
+          <input id="friend" type="checkbox" name="sub">
+            <label for="friend">От друзей/знакомых</label>
+            <br>
+            <br>
+          <input id="college" type="checkbox" name="sub">
+            <label for="college">От обучающихся в колледже</label>
+            <br>
+            <br>
+		    <input type="text" placeholder="Другое">
+      <div class="form-buttons">
+        <form action="check.php" method="post">
+        <button class="button" type="submit">Закончить регистрацию</button>
+  </form>
+      </div>
+</div>
+</main>
+</body>
+</html>
