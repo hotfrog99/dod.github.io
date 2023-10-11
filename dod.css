@@ -2,9 +2,12 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+
+
 body {
   font-family: 'Roboto', sans-serif;
-  background-color:#f1f5fe;
+
   margin: 0;}
 
 
@@ -87,7 +90,10 @@ p {
 
 }
 main{
-  background: #f1f5fe;
+  background-image: url(img/back2.png);
+  background-repeat:no-repeat;
+  background-position: center;
+  background-size:cover;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -109,7 +115,7 @@ main{
   padding-bottom: 38px;
   animation-name: fadeForm;
   animation-duration: .7s;
-  animation-timing-function: ease-ease-in-out;
+  animation-timing-function: ease-in-out;
   animation-delay: 0s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
